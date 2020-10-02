@@ -1,0 +1,17 @@
+POST http://localhost:3001/api/scheludes
+content-type: application/json
+
+{
+  "name": "Test schelude 1",
+  "weekDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+  "userId": "5eac8f8b8d64f81f568427ec",
+  "events": [
+    {"text": "aamupala", "start": "2020-05-01T08:30:00Z", "image": "breakfast"},
+    {"text": "oppitunti 1", "start": "2020-05-01T09:00:00Z", "image": "study"},
+    {"text": "oppitunti 2", "start": "2020-05-01T012:00:00Z", "image": "study"},
+    {"text": "ruoka", "start": "2020-05-01T16:00:00Z", "image": "food"},
+    {"text": "vapaa-aika", "start": "2020-05-01T17:00:00Z", "image": "freetime"},
+    {"text": "iltapala", "start": "2020-05-01T20:00:00Z", "image": "breakfast"},
+    {"text": "nukkumisaika", "start": "2020-05-01T21:00:00Z", "image": "sleep"}
+  ]
+}

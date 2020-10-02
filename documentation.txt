@@ -1,0 +1,23 @@
+routes:
+  - api/login POST
+  - api/users GET, POST
+  - api/shceludes GET, POST
+  
+models:
+  - schelude:
+    - name (String)
+    - owner (Id)
+    - users TABLE
+
+  - user:
+    - username (String)
+    - name (String)
+    - passwordHash: (String)
+
+  - event
+    - "parent schedule ID"
+    - header (String)
+    - description (String)
+    - start (String)
+    - image (String)
+  
